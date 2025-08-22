@@ -1,0 +1,55 @@
+<html th:replace="~{base::layout(~{::main})}">
+
+<head>
+
+
+
+</head>
+
+<body>
+
+	<main>
+
+		<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+			<div class="card p-4 shadow" style="width: 100%; max-width: 400px; border-radius: 15px;">
+
+
+				<div th:if="${msg}" class="alert alert-warning alert-dismissible fade show" role="alert">
+					<span th:text="${msg}"></span>
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+				<h2 class="text-center mb-4" style="color: #3f97da">Doctor Login</h2>
+
+				<form method="post" action="/Doctor">
+					<div class="mb-3">
+						<label for="email" class="form-label" style="color: #3f97da;">Email address</label>
+						<input name="email" type="email" class="form-control" id="email" placeholder="Enter email"
+							required>
+					</div>
+
+					<div class="mb-3">
+						<label for="password" class="form-label" style="color: #3f97da">Password</label>
+						<input name="password" type="password" class="form-control" id="password"
+							placeholder="Enter password">
+						<span style="position: absolute; margin-top: -28px; margin-left: 320px;"> <i
+								class="fa-solid fa-eye" onclick="myFunction()" id="pl"></i>
+
+							<i class="fa-solid fa-eye-slash" style="display: none;" id="pa" onclick="myFunction1()"></i>
+
+						</span>
+					</div>
+
+					<button type="submit" class="btn w-100"
+						style="background-color: #3f97da; color: white;">Login</button>
+				</form>
+
+				<div class="text-center mt-3">
+					<small>Don't have an account? <a href="#" style="color:#3f97da;">Register</a></small>
+				</div>
+			</div>
+		</div>
+
+
+
+	</main>
+</body>

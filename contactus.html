@@ -1,0 +1,202 @@
+<html th:replace="~{base::layout(~{::main})}">
+	<head>
+		
+	</head>
+	<body>
+		<main>
+
+
+
+
+
+
+
+
+
+<div class="container py-5 " style="margin-top: 5%;">
+  <div data-aos="fade-up" data-aos-duration="800" class="row g-4">
+    
+    <!-- SEND A MESSAGE -->
+    <div class="col-md-4">
+		<input type="hidden" id="msg" th:if="${msg}" th:value="${msg}">
+      <h5 style="text-decoration: none; font-weight: bold; margin-bottom: 20px; ">SEND A MESSAGE</h5>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+      <form method="post" th:object="${enquiry}"  >
+
+        <!-- Name -->
+        <div class="d-flex align-items-center mb-3">
+          <div style="width: 45px; height: 45px; background-color:  #3f97da; color: rgb(255, 255, 255); display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+            <i class="fa fa-user" style="color: aliceblue;"></i>
+          </div>
+          <input th:field="${enquiry.name}" type="text" class="form-control" placeholder="Your Name" style="flex: 1;" required>
+        </div>
+
+        <!-- Phone -->
+        <div class="d-flex align-items-center mb-3">
+          <div style="width: 45px; height: 45px; background-color: #3f97da; color: white; display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+            <i class="fa fa-phone"></i>
+          </div>
+          <input th:field="${enquiry.contactNo}" type="tel" class="form-control" placeholder="Phone Number" style="flex: 1;" required>
+        </div>
+
+        <!-- Email -->
+        <div class="d-flex align-items-center mb-3">
+          <div style="width: 45px; height: 45px; background-color: #3f97da; color: white; display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <input th:field="${enquiry.email}" type="email" class="form-control" placeholder="Email" style="flex: 1;" required>
+        </div>
+		<div class="d-flex align-items-center mb-3">
+		        <div style="width: 45px; height: 45px; background-color: #3f97da; color: white; display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+					<i class="fa-regular fa-user fa-2x"></i>
+		        </div>
+				<select th:field="${enquiry.gender}" name="gender"    class="form-select" required="required"> 
+						         <option value="">Select gender</option>
+						          <option value="Male">Male</option>
+						          <option value="Female">Female</option>
+						          <option value="Other">Other</option>
+						        </select>
+		      </div>
+			  <div class="d-flex align-items-center mb-3">
+			  	        <div style="width: 45px; height: 45px; background-color: #3f97da; color: white; display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+							<i class="fa-solid fa-question fa-2x"></i>
+			  	        </div>
+			  			<select th:field="${enquiry.subject}" name="subject"    class="form-select" required="required"> 
+			  					         <option value="">Select subject</option>
+			  					          <option value="enquiry">enquiry</option>
+			  					          <option value="other department">ortho department </option>
+			  					          <option value="other">other</option>
+			  					        </select>
+			  	      </div>
+
+		
+		
+        <!-- Note -->
+        <textarea th:field="${enquiry.message}" class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+
+        <!-- Button -->
+        <button type="submit" class="btn" style=" background-color:  #3f97da; color: rgb(0, 0, 0); font-weight: bold; width: 100%;">SEND</button>
+      </form>
+    </div>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <!-- CONTACT INFO -->
+    <div class="col-md-4">
+      <h5 style="text-decoration: none; font-weight: bold; margin-bottom: 20px;">CONTACT US</h5>
+
+      <!-- Address -->
+      <div class="d-flex align-items-start mb-3">
+        <div style="width: 45px; height: 45px; background-color: #3f97da; color: white; display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+          <i class="fa fa-phone"></i>
+        </div>
+        <div>
+          <p style="margin: 0;">Lucknow					</p>
+          <small>India</small>
+        </div>
+      </div>
+
+      <!-- Receive Records -->
+      <h6 style="margin-top: 30px;">RECEIVE RECORDS</h6>
+
+      <div class="d-flex align-items-start mb-3">
+        <div style="width: 45px; height: 45px; background-color: #3f97da; color: white; display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+          <i class="fa fa-phone"></i>
+        </div>
+        <div>
+          <p style="margin: 0;">Call Us</p>
+          <small>(094) 123 4567</small>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-start mb-3">
+        <div style="width: 45px; height: 45px; background-color: #3f97da; color: white; display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+          <i class="fa fa-envelope"></i>
+        </div>
+        <div>
+          <p style="margin: 0;">Send A Message</p>
+          <small>sameer@gmail.com</small>
+        </div>
+      </div>
+
+      <!-- Customer Care -->
+      <h6 style="margin-top: 30px;">CUSTOMER CARE</h6>
+
+      <div class="d-flex align-items-start mb-3">
+        <div style="width: 45px; height: 45px; background-color:#3f97da ; color: white; display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+          <i class="fa fa-phone"></i>
+        </div>
+        <div>
+          <p style="margin: 0;">Call Us</p>
+          <small>(094) 123 4567</small>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-start mb-3">
+        <div style="width: 45px; height: 45px; background-color: #3f97da; color: white; display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+          <i class="fa fa-envelope"></i>
+        </div>
+        <div>
+          <p style="margin: 0;">Send A Message</p>
+          <small>example@gmail.com</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPENING HOURS -->
+    <div class="col-md-4">
+      <div style="background-color: #3f97da; color: white; padding: 20px; height: 100%;">
+        <div class="d-flex align-items-center mb-3">
+          <div style="width: 45px; height: 45px; background-color: white; color: #bb735c; display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+            <i class="fa fa-clock fa-2x"></i>
+          </div>
+          <h5 style="margin: 0; background-color: #333; color: white; padding: 8px 12px;">OPENING HOURS</h5>
+        </div>
+
+        <!-- Time Rows -->
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid white; padding: 5px 0;"> <span>Monday</span> <span>8:00 - 17:00</span> </div>
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid white; padding: 5px 0;"> <span>Tuesday</span> <span>8:00 - 17:00</span> </div>
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid white; padding: 5px 0;"> <span>Wednesday</span> <span>8:00 - 17:00</span> </div>
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid white; padding: 5px 0;"> <span>Thursday</span> <span>8:00 - 17:00</span> </div>
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid white; padding: 5px 0;"> <span>Friday</span> <span>8:00 - 17:00</span> </div>
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid white; padding: 5px 0;"> <span>Sunday</span> <span>8:00 - 17:00</span> </div>
+
+        <!-- Button -->
+        <div class="text-center mt-4">
+          <button class="btn" style="border: 2px solid white; background-color: transparent; color: white; font-weight: bold; width: 100%;">BOOK APPOINTMENTS</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script type="text/javascript">
+					
+					
+					var msg=document.getElementById("msg");
+					if(msg.value!="")
+					
+					{
+						alert(msg.value);
+					}
+					
+					
+				</script>
+		</main>
+		
+	</body>
+</html>

@@ -1,0 +1,244 @@
+<html th:replace="~{base::layout(~{::main})}">
+
+
+<body>
+	<main>
+		<div style="background-color: rgb(255, 255, 255); border-radius: 50px; margin-top: 6%; margin-bottom: 4%; ">
+			<div class="uni-banner-default uni-background-1">
+								                    <div class="container">
+								                        <!-- Page title -->
+								                        <div class="page-title">
+								                            <div class="page-title-inner">
+								                                <h1>Registration</h1>
+								                            </div>
+								                        </div>
+								                        <!-- End page title -->
+
+								                        <!-- Breadcrumbs -->
+								                       
+								                        <!-- End breadcrumbs -->
+								                    </div>
+								                </div>
+
+			<div data-aos="fade-up" data-aos-duration="1000" class="container py-5 ">
+				
+				<h2 class="text-center fw-bold mb-5" style="color: #3f97da;  ">Patient Registration</h2>
+
+				<div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+
+					<!-- Carousel inner -->
+					<div class="carousel-inner">
+
+						<!-- Slide 1 -->
+						<div class="carousel-item active">
+							<div class="row g-4">
+
+								<!-- Second Opinion -->
+								<div class="col-md-6">
+									<div class="card"
+										style="border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+										<div class="row g-0">
+											<div class="col-md-6">
+												<img src="images/gallery/2.jpg" class="img-fluid rounded-start h-100"
+													alt="Second Opinion">
+											</div>
+											<div class="col-md-6 d-flex flex-column justify-content-between p-3">
+												<div>
+													<h5 class="fw-bold" style="color: #3f97da;">Second Opinion</h5>
+													<p style="font-size: 0.95rem;">Confirm diagnosis and take informed
+														decision about your treatment plan with some of India’s top
+														experts</p>
+												</div>
+												<a href="#"
+													style="color: #3f97da; font-weight: 500; text-decoration: none;">Know
+													More ➔</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Buy Medicine -->
+								<div class="col-md-6">
+													<div class="card p-4"
+														style="border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); height: 100%;">
+														<h5 class="fw-bold" style="color: #3f97da;">Buy Medicine</h5>
+														<p style="font-size: 0.95rem;">Recover without worrying about going out to buy
+															reliable medication; get them delivered to your doorstep</p>
+														<a href="#"
+															style="color: #3f97da; font-weight: 500; text-decoration: none;">Know More
+															➔</a>
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+						<!-- Slide 2 -->
+						<div class="carousel-item">
+							<div class="row g-4">
+
+								<!-- Labs and Diagnostics -->
+								<div class="col-md-6">
+									<div class="card p-4"
+										style="border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); height: 100%;">
+										<h5 class="fw-bold" style="color: #3f97da;">Labs and Diagnostics</h5>
+										<p style="font-size: 0.95rem;">Medanta Labs aims to take the benefit of its
+											superior technology, infrastructure and expertise to all</p>
+										<a href="#"
+											style="color: #3f97da; font-weight: 500; text-decoration: none;">Know More
+											➔</a>
+									</div>
+								</div>
+
+								<!-- Health Check -->
+								<div class="col-md-6">
+									<div class="card"
+										style="border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+										<div class="row g-0">
+											<div class="col-md-6">
+												<img src="images/gallery/4.jpg" class="img-fluid rounded-start h-100"
+													alt="Health Check">
+											</div>
+											<div class="col-md-6 d-flex flex-column justify-content-between p-3">
+												<div>
+													<h5 class="fw-bold" style="color: #3f97da;">Health Check</h5>
+													<p style="font-size: 0.95rem;">Take charge of your well-being with a
+														health experience customised for you</p>
+												</div>
+												<a href="#"
+													style="color: #3f97da; font-weight: 500; text-decoration: none;">Know
+													More ➔</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Carousel Controls -->
+					<button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"
+							style="background-color: #3f97da; border-radius: 50%; width: 2rem; height: 2rem;"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"
+							style="background-color: #3f97da; border-radius: 50%; width: 2rem; height: 2rem;"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+			<div data-aos="fade-up" data-aos-duration="800" class="container  "
+				style="background-color: rgb(255, 255, 255,);  padding: 10px;  max-width: 600px; border-radius:10px; box-shadow:0px 2px 15px 15px lightblue; border: 1px lightblue;">
+
+				<input type="hidden" id="msg" th:if="${msg}" th:value="${msg}">
+
+				<h2 class="text-center mb-4 fw-bold" style="color: rgb(0, 0, 0);">PATIENT REGISTERATION</h2>
+
+
+				<form method="post" th:object="${userDto}">
+
+
+					<div class="mb-2">
+						<label  class="form-label fw-bold">PATIENT NAME</label>
+						<i class="fa-solid fa-user"></i>
+						<input name="name" th:field="${userDto.name}" type="text" class="form-control"
+							placeholder="Enter full name" required="required">
+					</div>
+
+					<div class="mb-2">
+						<label class="form-label fw-bold">Patient Email</label>
+						<i class="fa-solid fa-inbox"></i>
+						<input name="email" th:field="${userDto.email}" type="email" class="form-control"
+							placeholder="Enter email address" required="required">
+					</div>
+
+					<div class="mb-2">
+						<label class="form-label fw-bold">PHONE NUMBER</label>
+						<i class="fa-solid fa-address-book"></i>
+						<input name="contact" th:field="${userDto.contactNumber}" type="number" class="form-control"
+							placeholder="Enter phone number" required="required">
+					</div>
+					<div class="mb-2">
+						<label class="form-label fw-bold">ADHAR NUMBER</label>
+						<i class="fa-solid fa-lock"></i>
+						<input name="adhar" th:field="${userDto.adharNumber}" type="tel" class="form-control"
+							placeholder="Adhar number" required="required">
+					</div>
+					<div class="mb-2">
+						<label class="form-label fw-bold">CREATE PASSWORD</label>
+						<i class="fa-solid fa-key"></i>
+						<input id="qqq" name="password" th:field="${userDto.password}" type="text"
+							class="form-control" placeholder=" Create a Password" required="required" onkeyup="check()">
+
+						<span style="position: absolute; margin-top: -28px; margin-left: 550px;"> <i
+								class="fa-solid fa-eye" onclick="myFunction()" id="pl"></i>
+
+							<i class="fa-solid fa-eye-slash" style="display: none;" id="pa" onclick="myFunction1()"></i>
+							</span>
+					</div>
+					<span id="h3"></span>
+						<div class="mb-2">
+						<label class="form-label fw-bold">GENDER</label>
+						<i class="fa-solid fa-user"></i>
+						<select name="gender" th:field="${userDto.gender}" class="form-select" required="required">
+							<option value="">Select gender</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+
+					<div class="mb-2">
+						<label class="form-label fw-bold">AGE</label>
+						<i class="fa-solid fa-calendar"></i>
+						
+						<input name="age" th:field="${userDto.age}" type="tel" placeholder="Enter your age"
+							class="form-control" required="required">
+					</div>
+
+					<div class="mb-2">
+						<label class="form-label fw-bold">ADDRESS</label>
+						<i class="fa-solid fa-house"></i>
+						<textarea name="address" th:field="${userDto.address}" class="form-control" rows="3"
+							placeholder="Enter address" required="required"></textarea>
+					</div>
+
+					<div class="d-grid  mx-auto mt-4 mb-4" style="width: 60%;">
+						<button type="submit" class="btn btn-primary" onclick=" return window.confirm('are you sure submit it')"
+							;>REGISTERED</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+
+
+			var msg = document.getElementById("msg");
+			if (msg.value != "") {
+				alert(msg.value);
+			}
+
+
+		</script>
+	</main>
+
+</body>
+
+</html>

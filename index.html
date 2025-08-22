@@ -1,0 +1,842 @@
+<html th:replace="~{base::layout(~{::main})}">
+
+<head>
+
+
+
+</head>
+
+<body>
+	<main>
+
+		<!--	<div class="load-page">
+			    <div class="sk-wave">
+			        <div class="sk-rect sk-rect1"></div>
+			        <div class="sk-rect sk-rect2"></div>
+			        <div class="sk-rect sk-rect3"></div>
+			        <div class="sk-rect sk-rect4"></div>
+			        <div class="sk-rect sk-rect5"></div>
+			    </div>
+			</div>
+-->
+
+
+
+
+		<div id="main-content" class="site-main-content">
+			<section class="site-content-area">
+
+				<!--BANNER-->
+				<div class="uni-banner">
+					<div class="uni-owl-one-item owl-carousel owl-theme">
+						<div class="item">
+							<div class="uni-banner-img uni-background-5"></div>
+							<div class="content animated" data-animation="flipInX" data-delay="0.9s">
+								<div class="container">
+									<div class="caption">
+										<h1>Let us protect your health</h1>
+										<p>
+											"PGI hospital website offers comprehensive info on specialties,doctors,
+											<br>
+											appointments, patient services, and health education."
+										</p>
+										<a href="#">our services</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="uni-banner-img uni-background-6"></div>
+							<div class="content animated" data-animation="flipInX" data-delay="0.9s">
+								<div class="container">
+									<div class="caption">
+										<h1>Let us protect your health</h1>
+										<p>
+											Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+											ante.
+											<br>
+											Donec eu libero sit amet quam egestas semper.
+										</p>
+										<a href="#">our services</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="uni-banner-img uni-background-7"></div>
+							<div class="content animated" data-animation="flipInX" data-delay="0.9s">
+								<div class="container">
+									<div class="caption">
+										<h1>Let us protect your health</h1>
+										<p>
+											Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+											ante.
+											<br>
+											Donec eu libero sit amet quam egestas semper.
+										</p>
+										<a href="#">our services</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--OPENING HOURS AND BOOK APPOINTMENT-->
+				<div class="uni-home-opening-book" data-aos="fade-up" data-aos-duration="1000">
+					<div class="container">
+						<div class="uni-home-opening-book-content">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="uni-services-opinging-hours">
+										<div class="uni-services-opinging-hours-title">
+											<div class="icon">
+												<i class="fa fa-clock-o" aria-hidden="true"></i>
+											</div>
+											<h4>opening hours</h4>
+										</div>
+										<div class="uni-services-opinging-hours-content">
+											<table class="table ">
+												<tr>
+													<td style="color: black;">monday</td>
+													<td style="color: black;">8:00 - 17:00</td>
+												</tr>
+												<tr>
+													<td style="color: black;">tuesday</td>
+													<td style="color: black;">8:00 - 17:00</td>
+												</tr>
+												<tr>
+													<td style="color: black;">wednesday</td>
+													<td style="color: black;">8:00 - 17:00</td>
+												</tr>
+												<tr>
+													<td style="color: black;">thursday</td>
+													<td style="color: black;">8:00 - 17:00</td>
+												</tr>
+												<tr>
+													<td style="color: black;">friday</td>
+													<td style="color: black;">8:00 - 17:00</td>
+												</tr>
+												<tr>
+													<td style="color: black;">sunday</td>
+													<td style="color: black;">8:00 - 17:00</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="uni-single-department-appointment-form">
+										<div class="uni-home-title">
+											<h3>Book appoitment</h3>
+											<div class="uni-underline"></div>
+										</div>
+
+										<form action="#">
+											<div class="row">
+												<div class="col-md-5">
+													<div class="input-group form-group">
+														<span class="input-group-addon"><i class="fa fa-user ms-3 mt-3 "
+																aria-hidden="true"></i></span>
+														<input type="text" class="form-control" name="name" value=""
+															placeholder="your name">
+													</div>
+													<div class="input-group form-group">
+														<span class="input-group-addon"><i
+																class="fa fa-phone ms-3 mt-3 "
+																aria-hidden="true"></i></span>
+														<input type="tel" class="form-control" name="phone" value=""
+															placeholder="phone number">
+													</div>
+													<div class="input-group form-group">
+														<span class="input-group-addon"><i
+																class="fa fa-envelope ms-3 mt-3 "
+																aria-hidden="true"></i></span>
+														<input type="email" class="form-control" name="email" value=""
+															placeholder="email">
+													</div>
+													<div class="input-group form-group">
+														<div class="input-group date date-check-in"
+															data-date="12-02-2017" data-date-format="mm-dd-yyyy">
+															<span class="input-group-addon"><i
+																	class="fa fa-calendar ms-3 mt-3 "
+																	aria-hidden="true"></i></span>
+															<input name="date1" class="form-control" type="text"
+																value="12-02-2017">
+															<span class="input-group-addon btn"><i
+																	class="fa fa-calendar ms-3 mt-3 " id="ti-calendar1"
+																	aria-hidden="true"></i></span>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-7">
+													<div class="input-group form-group">
+														<textarea id="message" name="phone" class="form-control"
+															placeholder="note"></textarea>
+													</div>
+													<button class="vk-btn vk-btn-send">send</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!--DEPARTMENT-->
+				<div class="uni-hơm-1-department">
+					<div class="container">
+						<div class="uni-home-title">
+							<h3>Department</h3>
+							<div class="uni-underline"></div>
+						</div>
+						<div class="uni-shortcode-icon-box-1">
+							<div class="row">
+								<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-shortcode-icon-box-1-default">
+										<div class="item-icons">
+											<img src="images/icons_box/icon_1/icon-5.png" alt="" class="img-responsive">
+										</div>
+										<div class="item-caption">
+											<h4>cardiology</h4>
+											<p>"Cardiology diagnoses and treats heart diseases through medications,
+												monitoring, interventions, and patient care."</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1500">
+									<div class="uni-shortcode-icon-box-1-default">
+										<div class="item-icons">
+											<img src="images/icons_box/icon_1/icon-4.png" alt="" class="img-responsive">
+										</div>
+										<div class="item-caption">
+											<h4>Neurology</h4>
+											<p>"Neurology treats brain, spinal cord, and nerve disorders through
+												diagnosis, monitoring, and specialized care.".</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1500">
+									<div class="uni-shortcode-icon-box-1-default">
+										<div class="item-icons">
+											<img src="images/icons_box/icon_1/icon-3.png" alt="" class="img-responsive">
+										</div>
+										<div class="item-caption">
+											<h4>Orthopedics</h4>
+											<p>"Orthopedics focuses on bones, joints, and muscles—treating injuries,
+												fractures, and movement disorders.".</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-shortcode-icon-box-1-default">
+										<div class="item-icons">
+											<img src="images/icons_box/icon_1/icon-2.png" alt="" class="img-responsive">
+										</div>
+										<div class="item-caption">
+											<h4>cancer department</h4>
+											<p>"The cancer department diagnoses and treats tumors using chemotherapy,
+												radiation, surgery, and supportive care.".</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-shortcode-icon-box-1-default">
+										<div class="item-icons">
+											<img src="images/icons_box/icon_1/icon-1.png" alt="" class="img-responsive">
+										</div>
+										<div class="item-caption">
+											<h4>Ophthalmology</h4>
+											<p>"Ophthalmology diagnoses and treats eye diseases, offering medical,
+												surgical, and vision correction services."</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1500">
+									<div class="uni-shortcode-icon-box-1-default">
+										<div class="item-icons">
+											<img src="images/icons_box/icon_1/icon.png" alt="" class="img-responsive">
+										</div>
+										<div class="item-caption">
+											<h4>Respiratory</h4>
+											<p>"The respiratory department treats lung and breathing disorders through
+												oxygen therapy, medications, and ventilator support."</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--OUR DOCTOR-->
+				<div class="uni-home-1-our-doctor">
+					<div class="uni-shortcode-team-2 uni-background-2">
+						<div class="container">
+
+							<div class="uni-home-title">
+								<h3>Our Doctor</h3>
+								<div class="uni-underline"></div>
+							</div>
+
+							<div class="uni-owl-four-item owl-carousel owl-theme">
+								<div class="item" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-team-default">
+										<div class="item-img">
+											<img src="img/Doctor1.jpg" alt="" class=" img-responsive"
+												style="height:34%">
+										</div>
+										<div class="item-caption">
+											<div class="col-md-3 col-sm-3 col-xs-3 uni-clear-padding">
+												<div class="item-icons">
+													<img src="images/icons_box/icon_4/icon-5.png">
+												</div>
+											</div>
+											<div class="col-md-9 col-sm-9 col-xs-9 uni-clear-padding">
+												<div class="item-title">
+													<h4>Dr. Devi Prasad Shetty</h4>
+													<span>Cardiologist</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-team-default">
+										<div class="item-img">
+											<img src="img/Doctor2.jpg" alt="" class="img-responsive"
+												style="height: 34%;">
+										</div>
+										<div class="item-caption">
+											<div class="col-md-3 col-sm-3 col-xs-3 uni-clear-padding">
+												<div class="item-icons">
+													<img src="images/icons_box/icon_4/icon-4.png" alt="">
+												</div>
+											</div>
+											<div class="col-md-9 col-sm-9 col-xs-9 uni-clear-padding">
+												<div class="item-title">
+													<h4>Dr. Naresh Trehan</h4>
+													<span>neurologist</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-team-default">
+										<div class="item-img">
+											<img src="img/Doctor3.jpg" alt="" class="img-responsive"
+												style="height: 34%;">
+										</div>
+										<div class="item-caption">
+											<div class="col-md-3 col-sm-3 col-xs-3 uni-clear-padding">
+												<div class="item-icons">
+													<img src="images/icons_box/icon_4/icon-3.png" alt="">
+												</div>
+											</div>
+											<div class="col-md-9 col-sm-9 col-xs-9 uni-clear-padding">
+												<div class="item-title">
+													<h4>Dr. B. C. Roy</h4>
+													<span>Ophthalmology doctor</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-team-default">
+										<div class="item-img">
+											<img src="img/Doctor5.png" alt="" class="img-responsive"
+												style="height: 34%;">
+										</div>
+										<div class="item-caption">
+											<div class="col-md-3 col-sm-3 col-xs-3 uni-clear-padding">
+												<div class="item-icons">
+													<img src="images/icons_box/icon_4/icon-2.png" alt="">
+												</div>
+											</div>
+											<div class="col-md-9 col-sm-9 col-xs-9 uni-clear-padding">
+												<div class="item-title">
+													<h4>Dr. Gagandeep Kang</h4>
+													<span>Cancer doctor</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!--OUR SERVICES-->
+				<div class="uni-home-our-services">
+					<div class="uni-shortcode-icons-box-5">
+						<div class="container">
+
+							<div class="uni-home-title">
+								<h3>Our Services</h3>
+								<div class="uni-underline"></div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-shortcode-icons-box-5-default">
+										<div class="item-icons-title">
+											<div class="col-md-4 uni-clear-padding">
+												<div class="item-icons">
+													<img src="images/icons_box/icon_4/icon-5.png" alt="">
+												</div>
+											</div>
+											<div class="col-md-8 uni-clear-padding">
+												<div class="item-title">
+													<h4>Corneal transplant surgery</h4>
+												</div>
+											</div>
+										</div>
+										<div class="item-caption">
+											<p>
+												"Corneal transplant surgery involves replacing a damaged or diseased
+												cornea with healthy donor tissue to improve vision, reduce pain, and
+												restore eye function."
+											</p>
+											<a href="#" class="readmore">Read more</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-shortcode-icons-box-5-default">
+										<div class="item-icons-title">
+											<div class="col-md-4 uni-clear-padding">
+												<div class="item-icons">
+													<img src="images/icons_box/icon_4/icon-4.png" alt="">
+												</div>
+											</div>
+											<div class="col-md-8 uni-clear-padding">
+												<div class="item-title">
+													<h4>Cardiothoracic Surgery</h4>
+												</div>
+											</div>
+										</div>
+										<div class="item-caption">
+											<p>
+												"Cardiothoracic surgery involves surgical treatment of diseases
+												affecting the heart, lungs, esophagus, and chest, including bypass
+												surgery, lung resections, and heart valve repairs."
+											</p>
+											<a href="#" class="readmore">Read more</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-shortcode-icons-box-5-default">
+										<div class="item-icons-title">
+											<div class="col-md-4 uni-clear-padding">
+												<div class="item-icons">
+													<img src="images/icons_box/icon_4/icon-3.png" alt="">
+												</div>
+											</div>
+											<div class="col-md-8 uni-clear-padding">
+												<div class="item-title">
+													<h4>General health check</h4>
+												</div>
+											</div>
+										</div>
+										<div class="item-caption">
+											<p>
+												"A general health check involves routine screening and assessment to
+												evaluate overall health, detect early diseases, and provide preventive
+												care recommendations.
+											</p>
+											<a href="#" class="readmore">Read more</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-shortcode-icons-box-5-default">
+										<div class="item-icons-title">
+											<div class="col-md-4 uni-clear-padding">
+												<div class="item-icons">
+													<img src="images/icons_box/icon_4/icon-2.png" alt="">
+												</div>
+											</div>
+											<div class="col-md-8 uni-clear-padding">
+												<div class="item-title">
+													<h4>Diagnosis &amp; <br> treatment of cancer</h4>
+												</div>
+											</div>
+										</div>
+										<div class="item-caption">
+											<p>
+												"Diagnosis is the process of identifying a disease or condition through
+												patient history, physical exams, and diagnostic tests to guide effective
+												treatment."
+											</p>
+											<a href="#" class="readmore">Read more</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-shortcode-icons-box-5-default">
+										<div class="item-icons-title">
+											<div class="col-md-4 uni-clear-padding">
+												<div class="item-icons">
+													<img src="images/icons_box/icon_4/icon-1.png" alt="">
+												</div>
+											</div>
+											<div class="col-md-8 uni-clear-padding">
+												<div class="item-title">
+													<h4>treatment of <br> pneumonia</h4>
+												</div>
+											</div>
+										</div>
+										<div class="item-caption">
+											<p>
+												"Pneumonia is an infection causing inflammation of the lungs' air sacs,
+												leading to cough, fever, chest pain, and <br>difficulty breathing."
+											</p>
+											<a href="#" class="readmore">Read more</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-shortcode-icons-box-5-default">
+										<div class="item-icons-title">
+											<div class="col-md-4 uni-clear-padding">
+												<div class="item-icons">
+													<img src="images/icons_box/icon_4/icon.png" alt="">
+												</div>
+											</div>
+											<div class="col-md-8 uni-clear-padding">
+												<div class="item-title">
+													<h4>Treatment of <br> dermatitis</h4>
+												</div>
+											</div>
+										</div>
+										<div class="item-caption">
+											<p>
+												"Dermatitis is inflammation of the skin causing redness, itching, and
+												rash, often triggered by allergens, irritants, or underlying medical
+												conditions."
+											</p>
+											<a href="#" class="readmore">Read more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="btn-all-services">
+								<a href="#">All services +</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!--CUSTOMERS SAY-->
+				<div class="uni-home-customers-says">
+					<div class="uni-shortcode-testimonials-2 uni-background-3">
+						<div class="container">
+
+							<div class="uni-home-title">
+								<h3>Customers say</h3>
+								<div class="uni-underline"></div>
+							</div>
+
+							<div class="uni-owl-two-item owl-carousel owl-theme">
+								<div class="item" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-shortcode-testimonials-default">
+										<div class="item-info">
+											<div class="row">
+												<div class="col-md-3 col-sm-4">
+													<div class="item-info-img">
+														<img src="img/feed.png" alt="" class="img-responsive">
+													</div>
+												</div>
+												<div class="col-md-9 col-sm-8">
+													<div class="item-info-title">
+														<h4>Mr Verma </h4>
+														<p class="testimonial_subtitle">myopia patients</p>
+													</div>
+													<div class="uni-divider"></div>
+												</div>
+											</div>
+										</div>
+										<div class="item-caption">
+											<p>
+												"Helpful staff, quick response, clean environment, compassionate
+												doctors, organized system, great experience, highly recommend this
+												hospital.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="item" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-shortcode-testimonials-default">
+										<div class="item-info">
+											<div class="row">
+												<div class="col-md-3 col-sm-4">
+													<div class="item-info-img">
+														<img src="img/feed1.png" alt="" class="img-responsive ">
+													</div>
+												</div>
+												<div class="col-md-9 col-sm-8">
+													<div class="item-info-title">
+														<h4>Ankita Yadav</h4>
+														<p class="testimonial_subtitle">Broken bone</p>
+													</div>
+													<div class="uni-divider"></div>
+												</div>
+											</div>
+										</div>
+										<div class="item-caption">
+											<p>
+												"Exceptional service, caring staff, clean and modern facilities, timely
+												treatment, knowledgeable doctors, well-managed system,<br> truly
+												grateful
+												for the care."
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="item" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-shortcode-testimonials-default">
+										<div class="item-info">
+											<div class="row">
+												<div class="col-md-3 col-sm-4">
+													<div class="item-info-img">
+														<img src="img/feed2.png" alt="" class="img-responsive">
+													</div>
+												</div>
+												<div class="col-md-9 col-sm-8">
+													<div class="item-info-title">
+														<h4></h4>
+														<p class="testimonial_subtitle">myopia patients</p>
+													</div>
+													<div class="uni-divider"></div>
+												</div>
+											</div>
+										</div>
+										<div class="item-caption">
+											<p>
+												Pellentesque habitant morbi tristique senectus et netus et malesuada
+												fames ac
+												turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="item" data-aos="fade-up" data-aos-duration="1000">
+									<div class="uni-shortcode-testimonials-default">
+										<div class="item-info">
+											<div class="row">
+												<div class="col-md-3 col-sm-4">
+													<div class="item-info-img">
+														<img src="img/feed3.png" alt="" class="img-responsive">
+													</div><br>
+
+												</div>
+												<div class="col-md-9 col-sm-8">
+													<div class="item-info-title">
+														<h4>amanda jonson</h4>
+														<p class="testimonial_subtitle">Broken bone</p>
+													</div>
+													<div class="uni-divider"></div>
+												</div>
+											</div>
+										</div>
+										<div class="item-caption">
+											<p>
+												Pellentesque habitant morbi tristique senectus et netus et malesuada
+												fames ac
+												turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--FAQ'S  and LASTEST POST-->
+				<div class="uni-home-faq-latest-post" data-aos="fade-up" data-aos-duration="1000" >
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="uni-home-faq">
+									<div class="uni-home-title">
+										<h3>Faq's</h3>
+										<div class="uni-line"></div>
+									</div>
+									<div class="accordion-default">
+										<div class="accordion-min-plus">
+											<div class="accordion">
+												<div class="accordion-item">
+													<h4 class="accordion-toggle">
+														How do I book an appointment?</h4>
+													<div class="accordion-content">
+														<p>
+															Pellentesque habitant morbi tristique senectus et netus et
+															malesuada fames ac turpis egestas. Vestibulum tortor quam,
+															feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
+															eu libero sit amet quam egestas semper. Aenean ultricies
+															mi vitae est. Mauris placerat eleifend leo
+														</p>
+													</div>
+												</div>
+												<div class="accordion-item">
+													<h4 class="accordion-toggle">What are the hospital's visiting hours?
+													</h4>
+													<div class="accordion-content">
+														<p>
+															Visiting hours vary by department but are typically from
+															10:00 AM to 12:00 PM and 5:00 PM to 7:00 PM. Please check
+															with the respective ward.
+														</p>
+													</div>
+												</div>
+												<div class="accordion-item">
+													<h4 class="accordion-toggle">Does the hospital accept health
+														insurance?</h4>
+													<div class="accordion-content">
+														<p>
+															Pellentesque habitant morbi tristique senectus et netus et
+															malesuada fames ac turpis egestas. Vestibulum tortor quam,
+															feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
+															eu libero sit amet quam egestas semper. Aenean ultricies
+															mi vitae est. Mauris placerat eleifend leo
+														</p>
+													</div>
+												</div>
+												<div class="accordion-item">
+													<h4 class="accordion-toggle">cancer department</h4>
+													<div class="accordion-content">
+														<p>
+															Pellentesque habitant morbi tristique senectus et netus et
+															malesuada fames ac turpis egestas. Vestibulum tortor quam,
+															feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
+															eu libero sit amet quam egestas semper. Aenean ultricies
+															mi vitae est. Mauris placerat eleifend leo
+														</p>
+													</div>
+												</div>
+												<div class="accordion-item">
+													<h4 class="accordion-toggle">What should I bring for my first
+														appointment?
+													</h4>
+													<div class="accordion-content">
+														<p>
+															Pellentesque habitant morbi tristique senectus et netus et
+															malesuada fames ac turpis egestas. Vestibulum tortor quam,
+															feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
+															eu libero sit amet quam egestas semper. Aenean ultricies
+															mi vitae est. Mauris placerat eleifend leo
+														</p>
+													</div>
+												</div>
+												<div class="accordion-item">
+													<h4 class="accordion-toggle">What facilities are available for
+														inpatients?
+													</h4>
+													<div class="accordion-content">
+														<p>
+															Pellentesque habitant morbi tristique senectus et netus et
+															malesuada fames ac turpis egestas. Vestibulum tortor quam,
+															feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
+															eu libero sit amet quam egestas semper. Aenean ultricies
+															mi vitae est. Mauris placerat eleifend leo
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="uni-home-latest-post">
+									<div class="uni-home-title">
+										<h3>latest posts</h3>
+										<div class="uni-line"></div>
+									</div>
+									<div class="uni-home-latest-post-body">
+										<div class="item">
+											<div class="item-img">
+												<a href="#"><img src="images/home1/lastestpost/img2.png" alt=""
+														class="img-responsive"></a>
+											</div>
+											<div class="item-caption">
+												<h4><a href="#">Managing Diabetes with Lifestyle Changes
+														elit?</a></h4>
+												<span class="time">June 12, 2025</span>
+											</div>
+										</div>
+										<div class="uni-divider"></div>
+										<div class="item">
+											<div class="item-img">
+												<a href="#"><img src="images/home1/lastestpost/img3.png" alt=""
+														class="img-responsive"></a>
+											</div>
+											<div class="item-caption">
+												<h4><a href="#">Understanding the Importance of Regular Health Checkups
+														elit?</a></h4>
+												<span class="time">June 20 2025</span>
+											</div>
+										</div>
+										<div class="uni-divider"></div>
+										<div class="item">
+											<div class="item-img">
+												<a href="#"><img src="images/home1/lastestpost/img4.png" alt=""
+														class="img-responsive"></a>
+											</div>
+											<div class="item-caption">
+												<h4><a href="#">How to Prevent Respiratory Infections This Season
+														elit?</a></h4>
+												<span class="time">June 30, 2025</span>
+											</div>
+										</div>
+										<div class="uni-divider"></div>
+										<div class="item">
+											<div class="item-img">
+												<a href="#"><img src="images/home1/lastestpost/img5.png" alt=""
+														class="img-responsive"></a>
+											</div>
+											<div class="item-caption">
+												<h4><a href="#"> Advances in Cardiology Treatments
+														elit?</a></h4>
+												<span class="time">June 12, 2017</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+			</section>
+		</div>
+
+
+		</div>
+		</div>
+	</main>
+</body>
+
+</html>
